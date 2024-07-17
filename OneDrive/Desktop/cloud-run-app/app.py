@@ -188,6 +188,7 @@ with tab1:
                     f"""Parameters:\n- Temperature: {temperature}\n- Max Output Tokens: {max_output_tokens}\n"""
                 )
                 st.text(prompt)
+                
 
 with tab2:
     st.subheader("Generate your marketing campaign")
@@ -209,6 +210,8 @@ with tab2:
         key="product_category",
         horizontal=True,
     )
+
+
     st.write("Select your target audience: ")
     target_audience_age = st.radio(
         "Target age: \n\n",
