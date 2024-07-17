@@ -6,6 +6,5 @@ steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['run', 'deploy', '--image', 'gcr.io/macro-outpost-429513-r8/cloud-run-app', '--region', 'us-central1','--allow-unauthenticated','--platform','managed']
  
-
 options:
   logging: CLOUD_LOGGING_ONLY 
